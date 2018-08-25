@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multi Step Form with Progress Bar using jQuery and CSS3</title>
+  
+    <link rel="stylesheet" href="https://github.com/alysm23/testloc/blob/master/style.css">
+
+  
+      <link rel="stylesheet" href="testloc/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Account Setup</li>
+    <li>Membership Type</li>
+    <li>ID Card Verification</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Country Club Registration</h2>
+    <h3 class="fs-subtitle">Step 1</h3>
+    <input type="text" name="first name" placeholder="First Name" />
+    <input type="text" name="last name" placeholder="Last Name" />
+    <input type="text" name="street address" placeholder="Street Address" />
+    <input type="text" name="city" placeholder="City/Town" />
+    <input type="text" name="zip code" placeholder="Zip Code" />
+    <input type="text" name="state" placeholder="State" />
+    <input type="text" name="birth date" placeholder="Birth Date" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="text" name="phone" placeholder="Phone Number" />
+    <input type="select" name="shirt size" placeholder="Shirt Size" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Country Club Registration</h2>
+    <h3 class="fs-subtitle">Step 2</h3>
+    <h4 class="membership-type">Choose a Membership Type:</h4>
+    <div class="radio-toolbar">
+    <label><input type="radio" name="membership type" value="military" checked> Military</label>
+    <label><input type="radio" name="membership type" value="veteran"> Veteran</label>
+    <label><input type="radio" name="membership type" value="first responder"> First Responder</label>
+    <label><input type="radio" name="membership type" value="loyal patriot"> Loyal Patriot</label>
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Country Club Registration</h2>
+    <h3 class="fs-subtitle">Step 3.</h3>
+    <h4 class="fs-subtitle"> You can take a picture of your ID card and upload it for our verification purposes. For Veterans, we will take any ID that contains "Veteran" on it. For Military and First Responders, we will take any military/work-issued IDs. Loyal Patriots do not need to submit any verification. </h4>
+    <input type="file" name="pic" accept="image/*">
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+  </fieldset>
+</form>
+  <script src='https://github.com/alysm23/testloc/blob/master/index.js'></script>
+<script src='https://github.com/alysm23/testloc/blob/master/index.js'></script>
+
+  
+
+    <script  src="testloc/index.js"></script>
+
+
+
+
+</body>
+
+</html>
